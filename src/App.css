@@ -1,0 +1,379 @@
+/* Premium Dark-Theme Reset and Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at top right, #1a163a, #0b0813 60%);
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.portfolio-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar Layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  color: #b0afb8;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bfff;
+}
+
+/* Hero Section Layout */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 0;
+  gap: 50px;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-name {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #00bfff;
+  display: block;
+}
+
+.hero-title {
+  font-size: 1.2rem;
+  color: #b0afb8;
+  margin-bottom: 30px;
+}
+
+/* Glowing Neon Button Setup */
+.btn-glow {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #00bfff;
+  color: #0b0813;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.4);
+  transition: 0.3s ease;
+}
+
+.btn-glow:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.7);
+}
+
+.btn-glow.small {
+  padding: 10px 20px;
+  font-size: 0.85rem;
+  margin-top: 15px;
+}
+
+/* Hero Circular Avatar Structure */
+.hero-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.circle-bg {
+  width: 320px;
+  height: 320px;
+  background-color: #ffffff; /* Matches your photo background for a seamless look */
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 40px rgba(0, 191, 255, 0.3);
+  border: 4px solid #00bfff; /* Adds a nice neon ring around the photo */
+}
+
+.profile-img {
+  width: 90%; /* Pulls the image back slightly so shoulders aren't cut off */
+  height: 90%;
+  object-fit: contain; /* Ensures the whole photo scales nicely inside the circle */
+  border-radius: 50%;
+}
+
+/* High-Tech Grid Cards Section */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 60px 0;
+}
+
+.feature-card {
+  background-color: rgba(30, 24, 54, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 16px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(30, 24, 54, 0.6);
+  border-color: rgba(0, 191, 255, 0.3);
+}
+
+.icon-box {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #b0afb8;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Section Header Typography */
+.section-subtitle {
+  color: #00bfff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* About and Table Layout */
+.about-section {
+  padding: 60px 0;
+}
+
+.bio-container {
+  background-color: rgba(30, 24, 54, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.bio-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.bio-text p {
+  color: #b0afb8;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.info-table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+.info-table td {
+  padding: 15px 0;
+  color: #b0afb8;
+  font-size: 0.95rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Custom Projects Layout */
+.projects-section {
+  padding: 60px 0;
+}
+
+.projects-section .project-card {
+  max-width: 800px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, rgba(30, 24, 54, 0.5), rgba(15, 12, 30, 0.7));
+  border: 1px solid rgba(0, 191, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.project-header h3 {
+  font-size: 1.7rem;
+  color: #ffffff;
+}
+
+.project-tag {
+  background-color: rgba(0, 191, 255, 0.1);
+  color: #00bfff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.projects-section .project-card p {
+  color: #b0afb8;
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+}
+
+.projects-section .project-card ul {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  color: #b0afb8;
+}
+
+.projects-section .project-card li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-project {
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
+.btn-project.primary {
+  background-color: #00bfff;
+  color: #0b0813;
+}
+
+.btn-project.primary:hover {
+  background-color: #009cd3;
+}
+
+.btn-project.secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-project.secondary:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: #ffffff;
+}
+
+/* Skills Neon Metron Bars */
+.skills-section {
+  padding: 60px 0 100px 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.skill-item {
+  margin-bottom: 10px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #b0afb8;
+}
+
+.bar {
+  width: 100%;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #00bfff;
+  box-shadow: 0 0 10px #00bfff;
+  border-radius: 10px;
+}
+
+.progress.python { width: 95%; }
+.progress.react { width: 85%; }
+.progress.db { width: 90%; }
+.progress.git { width: 80%; }
+
+/* Mobile Responsive Adapters */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 0;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .hero-name {
+    font-size: 2.5rem;
+  }
+  .circle-bg {
+    width: 240px;
+    height: 240px;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
