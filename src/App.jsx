@@ -20,7 +20,7 @@ function App() {
       <header id="home" className="hero-section">
         <div className="hero-text">
           <h1 className="hero-name">Raghu <span className="highlight">Lakshmi Narayan</span></h1>
-          <p className="hero-title">Full Stack Developer</p>
+          <h3 className="hero-name">Fullstack <span className="highlight">Developer</span></h3>
           {/* FIXED: Wrapped in a proper mailto link */}
           <a href="mailto:raghunarayan28@gmail.com" className="btn-glow">Get Connected</a>
         </div>
